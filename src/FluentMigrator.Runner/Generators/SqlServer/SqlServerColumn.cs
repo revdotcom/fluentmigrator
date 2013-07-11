@@ -73,7 +73,7 @@ namespace FluentMigrator.Runner.Generators.SqlServer
 
         public static string GetDefaultConstraintName(string tableName, string columnName)
         {
-            return string.Format("DF_{0}_{1}", tableName, columnName);
+            return string.Format("{0}_{1}_Def", tableName, columnName);
         }
     }
 }
