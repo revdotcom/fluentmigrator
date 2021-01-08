@@ -10,7 +10,6 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentMigrator.Runner.Core\FluentMigrator.Runner.Core.csproj" />
     <ProjectReference Include="..\FluentMigrator.Runner.Db2\FluentMigrator.Runner.Db2.csproj" />
     <ProjectReference Include="..\FluentMigrator.Runner.Firebird\FluentMigrator.Runner.Firebird.csproj" />
     <ProjectReference Include="..\FluentMigrator.Runner.MySql\FluentMigrator.Runner.MySql.csproj" />
@@ -31,6 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluentMigrator" Version="3.2.10" />
+    <PackageReference Include="FluentMigrator.Runner.Core" Version="3.2.10" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.1" />
   </ItemGroup>

@@ -12,9 +12,7 @@
     <None Include="..\..\FluentMigrator.snk" Link="FluentMigrator.snk" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentMigrator.Runner.Core\FluentMigrator.Runner.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="FluentMigrator.Runner.Core" Version="3.2.10" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.1" />
   </ItemGroup>
 </Project>

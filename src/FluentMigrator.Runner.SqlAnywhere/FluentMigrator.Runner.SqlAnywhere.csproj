@@ -13,10 +13,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FluentMigrator.Extensions.SqlAnywhere\FluentMigrator.Extensions.SqlAnywhere.csproj" />
-    <ProjectReference Include="..\FluentMigrator.Runner.Core\FluentMigrator.Runner.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Generators\" />
     <Folder Include="Processors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator.Runner.Core" Version="3.2.10" />
   </ItemGroup>
 </Project>
