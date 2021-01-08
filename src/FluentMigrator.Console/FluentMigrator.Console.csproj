@@ -19,6 +19,7 @@
     <ProjectReference Include="..\FluentMigrator.Runner\FluentMigrator.Runner.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="3.2.10" />
     <PackageReference Include="Npgsql" Version="3.2.7" />
     <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="5.12.1" />
     <PackageReference Include="FSharp.Core" Version="4.6.2" />
