@@ -3,14 +3,16 @@
   <Import Project="DotNetSdkMono.props" />
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <VersionPrefix>3.2.10</VersionPrefix>
+    <VersionPrefix>3.2.10.1</VersionPrefix>
     <Product>FluentMigrator</Product>
     <Copyright>Rev.com</Copyright>
     <Company>Rev.com</Company>
     <Authors>Rev.com</Authors>
+    <Description>Rev's fork for the FluentMigrator.Console found at https://github.com/revdotcom/fluentmigrator to handle our own flavor of default constraint naming.</Description>
     <PackageProjectUrl>https://github.com/revdotcom/fluentmigrator</PackageProjectUrl>
     <PackageIconUrl>https://github.com/revdotcom/fluentmigrator/raw/develop/docs/logo.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/revdotcom/fluentmigrator.git</RepositoryUrl>
+    <PackageReleaseNotes>Overide default constraint naming</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
     <MinClientVersion>3.5</MinClientVersion>
     <IsPackable>false</IsPackable>

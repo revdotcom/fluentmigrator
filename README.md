@@ -6,7 +6,7 @@ It makes a very simple change of changing how we name the default constraints. I
 
 You should upload new versions to myget with the following commands. Replaces the version with the version you are basing the package on.
 
-From the FluentMigrator.Console folder run the following:
+From the each folder, in order, run the following. FluentMigrator.SqlServer => FluentMigrator.Runner => FluentMigrator.Console
 
 `dotnet pack -c Release --include-symbols /p:SymbolPackageFormat=snupkg`
 
