@@ -6,10 +6,17 @@
     <PackageId>FluentMigrator.Console</PackageId>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\FluentMigrator.snk</AssemblyOriginatorKeyFile>
-    <Description>Console runner for FluentMigrator</Description>
+    <Description>Rev's fork for the FluentMigrator.Console found at https://github.com/revdotcom/fluentmigrator to handle our own flavor of default constraint naming.
+</Description>
     <IsPackable>false</IsPackable>
     <Platforms>AnyCPU;x64;x86</Platforms>
     <RuntimeIdentifiers>win7-x86;win7-x64;any</RuntimeIdentifiers>
+    <Authors>Rev.com</Authors>
+    <Version>3.2.10.1</Version>
+    <Company>Rev</Company>
+    <PackageProjectUrl>https://github.com/revdotcom/fluentmigrator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/revdotcom/fluentmigrator</RepositoryUrl>
+    <PackageReleaseNotes>Overide default constraint naming</PackageReleaseNotes>
   </PropertyGroup>
   <Import Project="$(MSBuildThisFileDirectory)../../PackageTool.props" />
   <ItemGroup>
