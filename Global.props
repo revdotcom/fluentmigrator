@@ -3,7 +3,7 @@
   <Import Project="DotNetSdkMono.props" />
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <VersionPrefix>3.2.10.1</VersionPrefix>
+    <VersionPrefix>3.2.10</VersionPrefix>
     <Product>FluentMigrator</Product>
     <Copyright>Rev.com</Copyright>
     <Company>Rev.com</Company>

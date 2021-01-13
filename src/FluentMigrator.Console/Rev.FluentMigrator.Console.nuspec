@@ -2,18 +2,24 @@
 <package>
   <metadata>
     <id>Rev.FluentMigrator.Console</id>
-    <version>3.2.10.1</version>
+    <version>3.2.10</version>
     <authors>bryan</authors>
-    <description>Rev's fork for the FluentMigrator.Console found at https://github.com/revdotcom/fluentmigrator to handle our own flavor of default constraint naming.</description>
+    <description>Rev's fork for the FluentMigrator.Console found at https://github.com/revdotcom/fluentmigrator to handle our own flavor of default constraint naming.
+When installed it will add the FluentMigrator.Console's Migrate.exe and all needed libs in a folder called migrate in your build output folder</description>
     <copyright>Copyright 2020 Rev.com</copyright>
     <license type="expression">Apache-2.0</license>
     <projectUrl>https://github.com/revdotcom/fluentmigrator</projectUrl>
     <iconUrl>https://github.com/revdotcom/fluentmigrator/raw/develop/docs/logo.png</iconUrl>
     <repository type="git" url="https://github.com/revdotcom/fluentmigrator.git" />
-
+    <contentFiles> 
+      <!-- This is what tells nuget to copy the files in contentFiles to be copied to the output folder -->
+      <files include="**" buildAction="None" copyToOutput="true" flatten="false" /> 
+    </contentFiles> 
   </metadata>
+
   <files>
-    <!-- Include everything in \build -->
-    <file src="bin\Release\net461\**" target="build" />
+    <!-- This tells nuget to move the build files to the contentFiles folder in the nuget package -->
+    <!-- contentFiles is the modern way to do this, the content folder is legacy at this point -->
+    <file src="bin\Release\net461\**" target="contentFiles\any\any\migrate" />
   </files>
 </package>
